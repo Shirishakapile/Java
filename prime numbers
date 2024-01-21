@@ -1,0 +1,37 @@
+import java.util.*;
+class Main
+{
+    public static void main(String []args)
+    {
+        //Write your code here
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int b=s.nextInt();
+        int d=0;
+        if(a>0&&b>0)
+        {
+            for(int i=a;i<=b;i++){
+             int c=0;
+            for(int j=1;j<=i;j++)
+            {
+                if(i%j==0)
+                {
+                    c++;
+                }
+            }
+            if(c==2)
+            {
+                d++;
+                if(d==1)
+                System.out.print(i);
+                else
+                System.out.print(", "+i);
+            }
+        }
+        }
+        else
+        {
+            System.out.print("Invalid Inputs");
+        }
+    }
+}
