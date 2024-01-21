@@ -1,0 +1,23 @@
+import java.util.*;
+class Main
+{
+    public static void main(String []args)
+    {
+        //Write your code here
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int b=0,c=0;
+        if(a>0)
+        {
+            while(a>0)
+            {
+                b=a%10;
+                c=b+c;
+                a=a/10;
+            }
+            System.out.print(c);
+        }
+        else
+        System.out.println("Invalid Input");
+    }
+}
